@@ -20,7 +20,7 @@
 	--bg-overlay-opacity-5: 0.4;
 	--bg-overlay-opacity-6: 0.1;
 
-	--custom-background-gradient-opacity-chat: 0.8 !important;
+--custom-background-gradient-opacity-chat: 0.8 !important;
     --custom-background-gradient-highest-opacity: var(--bg-overlay-opacity-1) !important;
     --custom-background-gradient-lower-opacity: var(--bg-overlay-opacity-2) !important;
     --custom-background-gradient-high-opacity: var(--bg-overlay-opacity-3) !important;
