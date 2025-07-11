@@ -5,10 +5,18 @@
 }
 
 .theme-dark {
+    --background-primary: color-mix(in oklab, var(--primary-600) 100%, var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+    --background-secondary: color-mix(in oklab, var(--primary-630) 100%, var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+    --background-secondary-alt: color-mix(in oklab, var(--primary-660) 100%, var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+    --background-tertiary: color-mix(in oklab, var(--primary-700) 100%, var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
     --background-floating: color-mix(in oklab, var(--primary-800) 100%, var(--theme-base-color, #000) var(--theme-base-color-amount, 0%));
 }
 
 .theme-light {
+    --background-primary: color-mix(in oklab, var(--white-500) 100%, var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+    --background-secondary: color-mix(in oklab, var(--primary-130) 100%, var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+    --background-secondary-alt: color-mix(in oklab, var(--primary-160) 100%, var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
+    --background-tertiary: color-mix(in oklab, var(--primary-200) 100%, var(--theme-base-color, black) var(--theme-base-color-amount, 0%));
     --background-floating: color-mix(in oklab, var(--white) 100%, var(--theme-base-color, #000) var(--theme-base-color-amount, 0%));
 }
 
@@ -53,11 +61,15 @@ body {
 
 /* User panel */
 .theme-dark .panels_c48ade {
-    background: var(--background-gradient-highest) !important;
+    background: var(--background-gradient-highest, var(--background-secondary-alt)) !important;
 }
 
 .theme-light .panels_c48ade {
-    background: var(--background-gradient-high) !important;
+    background: var(--background-gradient-high, var(--background-secondary-alt)) !important;
+}
+
+.sidebar_c48ade:after {
+	background: none !important;
 }
 
 .panel__5dec7,
@@ -69,18 +81,23 @@ body {
 .theme-dark .privateChannels__35e86,
 .theme-dark .scroller__99e7c,
 .theme-dark .container__2637a {
-    background: var(--background-gradient-high) !important;
+    background: var(--background-gradient-high, var(--background-secondary)) !important;
 }
 
 .theme-light .privateChannels__35e86,
 .theme-light .scroller__99e7c,
 .theme-light .container__2637a {
-    background: var(--background-gradient-lower);
+    background: var(--background-gradient-lower, var(--background-secondary)) !important;
+}
+
+.sidebar_c48ade,
+.wrapper_ef3116 {
+	background: var(--background-tertiary) !important;
 }
 
 .container__551b0,
 .container__2637a {
-    background: var(--background-gradient-high) !important;
+    background: var(--background-gradient-high, var(--background-tertiary)) !important;
     margin-left: 0 !important;
 }
 
