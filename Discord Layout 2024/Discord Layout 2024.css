@@ -92,7 +92,7 @@ body {
 
 .sidebar_c48ade,
 .wrapper_ef3116 {
-    background: var(--background-gradient-app-frame,var(--background-base-lowest));
+    background: var(--background-gradient-app-frame, var(--background-base-lowest)) !important;
 }
 
 .container__551b0,
@@ -260,4 +260,5 @@ body {
 .separator_c1e9c4 {
     margin: 4px !important;
 }
+
 
